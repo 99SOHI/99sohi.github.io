@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs@1.9.22/dist/interact.min.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +21,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="ico/ico128.png" />
+    <title>99SOHI</title>
 </head>
 <body>
     <script src="scripts/draggable.js"></script>
@@ -32,16 +35,16 @@
 
     <div class="modal" id="modal">
       <div class="navigation">
-        <a href="#" class="navigation-button">About</a>
+        <a href="#about-me" class="navigation-button" onClick="document.getElementById('about-me').scrollIntoView();">About</a>
       </div>
       <div class="navigation">
-        <a href="#" class="navigation-button">Projects</a>
+        <a href="#projects" class="navigation-button">Projects</a>
       </div>
       <div class="navigation">
-        <a href="#" class="navigation-button">Certifications</a>
+        <a href="#certifications" class="navigation-button">Certifications</a>
       </div>
       <div class="navigation">
-        <a href="#" class="navigation-button">Contacts</a>
+        <a href="#contact" class="navigation-button">Contacts</a>
       </div>
     </div>
   
@@ -50,22 +53,21 @@
         <div id="pos">
             <p id="hero" class="title-size">Hi, My name is</p>
             <div id="tw"></div>
-            <!-- <p id="name">Alwi</p> -->
         </div>
     </div>
 
     <div id="about-me">
         <div id="about-me-cont">
-            <div id="picture">
+            <div id="picture" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="styles/potrait 50.png" alt="potrait" id="potrait">
             </div>
-            <div id="text">
+            <div id="text" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <p class="title">About Me</p>
                 <p class="desc">I am a self-taught Web dev and Graphic designer who specialized in Front-end and Content Creation. Fueled with a long time passion in the IT Worlds, I keep searching my way to get into it by keep learning new stuff as my life goes by<br><br>
                     I'm just a High school graduate but I believe everything could be achieved if I put my mind into it, so even if there's just a little bit of opportunity given to me, I'll make sure I'll do it in a professional manner and rest assured will not dissapoint you<br><br>
                     Here's some of the programming language and tools that i use
                 </p>
-                <div id="tools">
+                <div id="tools" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <span class="circles"><img src="ico/HTML5_logo_and_wordmark.svg" alt="html" class="tools-ico"><p>HTML</p></span>
                     <span class="circles"><img src="ico/CSS3_logo_and_wordmark.svg" alt="CSS" class="tools-ico"><br>CSS</span>
                     <span class="circles"><img src="ico/Unofficial_JavaScript_logo_2.svg" alt="" class="tools-ico"><br>JavaScript</span>
@@ -79,14 +81,14 @@
     </div>
 
     <div id="projects" class="projectss">
-        <div class="title-cap">
+        <div class="title-cap" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <p class="title">Projects</p>
             <p class="caption">And here's some of the things that i've done</p>
             <p class="info">*Double Tap to zoom</p>
         </div>
 
         <div id="project1" class="draggable">
-            <img src="portfolio/Gameconsign.jpg" alt="Concept Gameconsign" id="img1">
+            <img src="Portfolio/Gameconsign.jpg" alt="Concept Gameconsign" id="img1">
             <p class="info">
                 <strong>Gameconsign Branding Concept</strong> (Personal Project)<br><br>
                 Here's a branding concept that i made based on one of the biggest gaming consignment store in Indonesia <a href="https://www.instagram.com/gameconsign" target="_blank" class="links">Gameconsign</a>
@@ -127,7 +129,7 @@
 
         <div id="project3" class="draggable">
             <video autoplay="true" loop="true" muted="true" playsinline>
-                <source src="portfolio/Wardah Video Competition.mp4" type="video/mp4" />
+                <source src="Portfolio/Wardah Video Competition.mp4" type="video/mp4" />
                 Video tidak dapat dimulai 
             </video>
             <p class="info">
@@ -174,12 +176,12 @@
     
 
     <div id="certifications">
-        <div class="title-cap">
+        <div class="title-cap" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <p class="title">Certificates</p>
             <p class="caption">Here's some certifications that i've gotten</p>
         </div>
 
-        <div class="button-style">
+        <div class="button-style" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="ico/arrow.svg" alt="arrow" id="arrow1">
                 <a class="collapse-button" data-toggle="collapse" href="#language" role="button" aria-expanded="false" aria-controls="language" id="btnLanguage">
                   Language
@@ -197,7 +199,7 @@
           </div>
 
 
-        <div class="button-style">
+        <div class="button-style" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="ico/arrow.svg" alt="arrow" id="arrow2">
                 <a class="collapse-button" data-toggle="collapse" href="#programming" role="button" aria-expanded="false" aria-controls="language" id="btnProgramming">
                   Programming
@@ -215,7 +217,7 @@
           </div>
 
 
-          <div class="button-style">
+          <div class="button-style" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="ico/arrow.svg" alt="arrow" id="arrow3">
                 <a class="collapse-button" data-toggle="collapse" href="#others" role="button" aria-expanded="false" aria-controls="language" id="btnOther">
                   Others
@@ -224,7 +226,7 @@
         </div>
           <div class="collapse" id="others">
             <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Still Growing...
             </div>
           </div>
 
@@ -320,6 +322,13 @@
           $(this).bringToTop();
         });
       </script>
+
+
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
 </body>
