@@ -31,10 +31,12 @@ body {
     top: 85vh;
     left: 90vw;
     z-index: 999;
+    transition: 0.2s;
 }
 
 #navButton.active {
   transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s;
 }
 
 a:hover {
@@ -44,7 +46,7 @@ a:hover {
 
 .modal {
   position: fixed;
-  top: 87vh;
+  top: 80vh;
   left: 80%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
@@ -570,6 +572,17 @@ hr {
 
 
   @media screen and (max-width: 850px) {
+
+    .modal {
+      margin: auto;
+      width: 90vw;
+      top: 100vh;
+      left: 0;
+    }
+
+    .modal.active {
+      transform: translate(0, -50%) scale(1);
+    }
     
     #navButton {
         top: 90vh;
