@@ -1,22 +1,13 @@
-// Language button
-const btnLanguage = document.getElementById('btnLanguage')
-const arr = document.getElementById('arrow1');
-btnLanguage.addEventListener('click', function(event) {
-  arr.classList.toggle('down');
-
-});
-
-// Language button
+// Programming button
 const btnProgramming = document.getElementById('btnProgramming')
-const arr2 = document.getElementById('arrow2');
+const arr2 = document.getElementById('arrow1');
 btnProgramming.addEventListener('click', function(event) {
   arr2.classList.toggle('down');
-
 });
 
-// Language button
+// Others button
 const btnOther = document.getElementById('btnOther')
-const arr3 = document.getElementById('arrow3');
+const arr3 = document.getElementById('arrow2');
 btnOther.addEventListener('click', function(event) {
   arr3.classList.toggle('down');
 });
